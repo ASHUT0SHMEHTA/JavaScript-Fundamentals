@@ -1,97 +1,54 @@
-// let firstName = 'Ashutosh';
-// let lastName = 'Mehta';
-// let phoneNumber = 9829736391;
+'strict mode'
 
-// console.log(firstName, lastName, phoneNumber);
-// console.table([firstName, lastName, phoneNumber]);
-// console.log(firstName + lastName + phoneNumber);
-// console.log(firstName + ' ' + lastName + ' ' + phoneNumber);
-
-// String
-
-// const firstName = 'Ashutosh';
-// const lastName = 'Mehta';
-// const city = 'Jaipur';
-
-// console.log(firstName);
-// console.log(typeof (firstName));
-
-// console.log(lastName);
-// console.log(typeof (lastName));
-
-// console.log(city);
-// console.log(typeof (city));
-
-// Number
-
-// let age = 18;
-// const phoneNumber = 9820586188;
-// const score = 95;
-
-// console.log(age);
-// console.log(typeof (age));
-
-// console.log(phoneNumber);
-// console.log(typeof (phoneNumber));
-
-// console.log(score);
-// console.log(typeof (score));
-
-// boolean
-
-// let isUserOnline = true;
-// let isUseroffline = false;
-
-// console.log(isUserOnline);
-// console.log(typeof (isUserOnline));
-
-// let isUserOnline = false;
-// let isUseroffline = false;
-
-// console.log(isUserOnline);
-// console.log(typeof (isUserOnline));
-
-// let subscribe = true;
-// let unsubscribe = false;
-
-// console.log(subscribe);
-// console.log(typeof (subscribe));
-
-// let ashuAge = 15;
-// let age = ashuAge >= 16;
-
-// console.log(age);
-
-// let userName = null;
-// console.log(userName);
-// console.log(typeof (null));
+// function teaProcessor(sugar, milk) {
+//     console.log(sugar, milk);
+//     const tea = `Tea with ${sugar} spoons sugar and ${milk} ml milk`;
+//     return tea;
+// }
+// const tea = teaProcessor(1, 100)
+// console.log(tea);
 
 
-// let userName;
-// console.log(userName);
-// console.log(typeof (userName));
+// function calcAge(birthYear) {
+//     return 2037 - birthYear;
+// }
 
-// let accountBalance = 8511141414141414141414014141414114144n;
-// console.log(typeof (accountBalance));
+// const age1 = calcAge(1991)
+// console.log(age1)
 
-// let num = Symbol('ashutosh')
-// let num2 = Symbol('ashutosh')
+// const calcAge2 = function (birthYear) {
+//     return 2037 - birthYear
+// }
 
-// console.log(num === num2);
+// const age2 = calcAge2(1991);
 
-// let x = 2;
-// x **= 3;   // x = x  3
-// console.log(x);  // 8
+// console.log(age1, age2)
 
-const massMark = 78;
-const heightMark = 1.69;
-const massJohn = 92;
-const heightJohn = 1.95;
-
-const BMIMark = massMark / heightMark ** heightMark
-const BMIJohn = massJohn / heightJohn ** heightJohn
-console.log(BMIJohn, BMIMark);
+// const calcAge3 = birthYear => 2037 - birthYear;
+// const age3 = calcAge(1991);
+// console.log(age3);
 
 
+// const yearsUntilRetirement = (birthYear, firstName) => {
+//     const age = 2037 - birthYear;
+//     const retirement = 65 - age;
+//     // return retirement;
+//     return `${firstName} retires in ${retirement} years`;
+// }
 
+// console.log(yearsUntilRetirement(1991, 'Jonas'));
+// console.log(yearsUntilRetirement(2003, 'Ashu'));
 
+const cutPieces = function (fruit) {
+    return fruit * 4;
+}
+
+const fruitProcessor = function (apples, oranges) {
+
+    const applePieces = cutPieces(apples);
+    const orangePieces = cutPieces(oranges);
+
+    const jucie = `Juice with ${applePieces} apples and ${orangePieces} oranges`;
+    return jucie;
+}
+console.log(fruitProcessor(2, 4));
