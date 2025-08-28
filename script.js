@@ -1,64 +1,96 @@
-// const firstName = 'Ashutosh';
-// const lastName = 'Mehta';
-// const phoneNubmer = 982678578;
-// const userName = 'ashut0shmehta';
-// const userAge = 18;
-
-// console.log(firstName);
-// console.log(lastName);
-// console.log(phoneNubmer);
-// console.log(userName);
-// console.log(userAge);
-
-// console.table([firstName, lastName, phoneNubmer, userName, userAge]);
-
 // let firstName = 'Ashutosh';
 // let lastName = 'Mehta';
-// let userBio = 'Never give up';
-// let userGmail = "ashutoshmehta186@gmail.com";
-// let phoneName = 'I-phone-11';
+// let phoneNumber = 9829736391;
+
+// console.log(firstName, lastName, phoneNumber);
+// console.table([firstName, lastName, phoneNumber]);
+// console.log(firstName + lastName + phoneNumber);
+// console.log(firstName + ' ' + lastName + ' ' + phoneNumber);
+
+// String
+
+// const firstName = 'Ashutosh';
+// const lastName = 'Mehta';
+// const city = 'Jaipur';
 
 // console.log(firstName);
+// console.log(typeof (firstName));
+
 // console.log(lastName);
-// console.log(userBio);
-// console.log(userGmail);
-// console.log(phoneName);
+// console.log(typeof (lastName));
 
-// let age = 21;
-// const phoneNubmer = 9829736391;
-// let ashuWeight = 78;
-// let ashuHeight = 5.11;
+// console.log(city);
+// console.log(typeof (city));
 
+// Number
 
-// let userOnline = true;
-// let useroffline = false;
+// let age = 18;
+// const phoneNumber = 9820586188;
+// const score = 95;
 
-// console.log(typeof (userOnline));
-// // console.log(useroffline);
+// console.log(age);
+// console.log(typeof (age));
 
-// userOnline = 'Yes';
-// console.log(typeof (userOnline));
+// console.log(phoneNumber);
+// console.log(typeof (phoneNumber));
+
+// console.log(score);
+// console.log(typeof (score));
+
+// boolean
+
+// let isUserOnline = true;
+// let isUseroffline = false;
+
+// console.log(isUserOnline);
+// console.log(typeof (isUserOnline));
+
+// let isUserOnline = false;
+// let isUseroffline = false;
+
+// console.log(isUserOnline);
+// console.log(typeof (isUserOnline));
+
+// let subscribe = true;
+// let unsubscribe = false;
+
+// console.log(subscribe);
+// console.log(typeof (subscribe));
+
+// let ashuAge = 15;
+// let age = ashuAge >= 16;
+
+// console.log(age);
+
+// let userName = null;
+// console.log(userName);
+// console.log(typeof (null));
+
 
 // let userName;
-
+// console.log(userName);
 // console.log(typeof (userName));
 
-// const userName = null
+// let accountBalance = 8511141414141414141414014141414114144n;
+// console.log(typeof (accountBalance));
 
-// console.log(typeof (userName));
+// let num = Symbol('ashutosh')
+// let num2 = Symbol('ashutosh')
 
-// let age = 25;
-// console.log(age);
+// console.log(num === num2);
 
-// age = 26;
-// console.log(age);
+// let x = 2;
+// x **= 3;   // x = x  3
+// console.log(x);  // 8
 
-// const phoneNubmer = 9829736391;
-// // phoneNubmer = 1515154564;
-// console.log(phoneNubmer);
+const massMark = 78;
+const heightMark = 1.69;
+const massJohn = 92;
+const heightJohn = 1.95;
 
-
-
+const BMIMark = massMark / heightMark ** heightMark
+const BMIJohn = massJohn / heightJohn ** heightJohn
+console.log(BMIJohn, BMIMark);
 
 
 
