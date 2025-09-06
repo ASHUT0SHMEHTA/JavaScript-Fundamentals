@@ -1,54 +1,66 @@
-'strict mode'
+'use strict';
 
-// function teaProcessor(sugar, milk) {
-//     console.log(sugar, milk);
-//     const tea = `Tea with ${sugar} spoons sugar and ${milk} ml milk`;
-//     return tea;
-// }
-// const tea = teaProcessor(1, 100)
-// console.log(tea);
+// let userName = 'Ashutosh'
+
+// let userName = 'Ashutosh';
+// let userPhoneNumber = 982976396;
+// let accountBalance = 158128258258252741258n;
+// let userIsOnline = true;
+// let userIsOffline = false;
+// let userId;
+// let currentTemperature = null;
+// let sym1 = Symbol(1, 2);
+// let sym2 = Symbol(1, 2);
+
+// console.log(typeof (userName));
+// console.log(typeof (userPhoneNumber));
+// console.log(typeof (accountBalance));
+// console.log(typeof (userIsOnline));
+// console.log(typeof (userIsOffline));
+// console.log(typeof (userId));
+// console.log(typeof (currentTemperature));
+// console.log(typeof (sym1));
+// console.log(typeof (sym2));
+// console.log(sym1 === sym2);
+
+// console.table([userId, userName])
+
+// let userName = 'Ashutosh';
+// console.log(userName);
+
+// userName = 'Mohit';
+// console.log(userName);
+
+// const userName = 'Ashutosh';
+// console.log(userName);
+
+// userName = 'Mohit'// this is not allowed
+
+// var userName = 'Ashutosh';
+// console.log(userName);
+
+// userName = 'Mohit';
+// console.log(userName);// avoid it
+
+// const a = 10;
+// const b = 10;
+
+// console.log(a + b);
+
+// const a = 10;
+// const b = 10;
+// console.log(a - b);
+
+// const a = 10 * 10;
+// const b = 20 * 10;
+// console.log(a * b);
+
+// const a = 10 / 10;
+// const b = 20 / 10;
+// console.log(a / b);
 
 
-// function calcAge(birthYear) {
-//     return 2037 - birthYear;
-// }
-
-// const age1 = calcAge(1991)
-// console.log(age1)
-
-// const calcAge2 = function (birthYear) {
-//     return 2037 - birthYear
-// }
-
-// const age2 = calcAge2(1991);
-
-// console.log(age1, age2)
-
-// const calcAge3 = birthYear => 2037 - birthYear;
-// const age3 = calcAge(1991);
-// console.log(age3);
 
 
-// const yearsUntilRetirement = (birthYear, firstName) => {
-//     const age = 2037 - birthYear;
-//     const retirement = 65 - age;
-//     // return retirement;
-//     return `${firstName} retires in ${retirement} years`;
-// }
 
-// console.log(yearsUntilRetirement(1991, 'Jonas'));
-// console.log(yearsUntilRetirement(2003, 'Ashu'));
 
-const cutPieces = function (fruit) {
-    return fruit * 4;
-}
-
-const fruitProcessor = function (apples, oranges) {
-
-    const applePieces = cutPieces(apples);
-    const orangePieces = cutPieces(oranges);
-
-    const jucie = `Juice with ${applePieces} apples and ${orangePieces} oranges`;
-    return jucie;
-}
-console.log(fruitProcessor(2, 4));

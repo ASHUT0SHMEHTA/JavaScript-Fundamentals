@@ -1,84 +1,90 @@
-// 1.Lowercase single word
+// Naming convention
+
+// 1. Lowercase
+
+// All letters are small (a–z).
+// Usually used for simple variable names.
 
 // Example:
 
 let age = 25;
 let city = "Delhi";
 
-//Explanation:
+// Think of it like writing your name in all small letters on a notebook.
 
-// Simple lowercase words are usually used for short and temporary variables, but they are not very descriptive. Good for quick demos or throwaway code.
+// 2. CamelCase
 
-// Use it sometimes, but prefer more descriptive names.
-
-// 2.camelCase (Most Common in JavaScript)
-
-// Example:
-
-let firstName = "John";
-let currentTemperature = 32;
-
-// Explanation:
-
-// The first word starts with lowercase, each new word starts with uppercase.
-
-// This is the standard convention in JavaScript for variables and functions.
-
-function calculateTotalPrice() { }
-
-// 3.snake_case (underscore naming)
+// First word starts with lowercase, every next word starts with a capital letter.
+// No spaces or underscores are used.
+// Common in JavaScript variable/function names.
 
 // Example:
 
-let user_name = "Alice";
-let total_balance = 5000;
+let firstName = "Ashutosh";
+let totalMarks = 480;
 
-// Explanation:
-// Uses underscores between words. Common in some other languages (Python, SQL), but not standard in JavaScript.
+// Analogy: Like writing “firstName” as a camel’s hump – the capital letters look like humps in the middle.
 
-// Not recommended for JS, but valid.
+// 3. Snake_Case
 
-// 4.Dollars & Underscore ($variable, _$hidden)
+// Words are written in lowercase and separated by an underscore _.
+// Used in Python variables/functions.
 
 // Example:
 
-let $element = document.querySelector("#id");
-let _privateData = "hidden";
+user_name = "Ashu"
+total_marks = 480
 
-// Explanation:
 
-// In JS, variables can start with $ or _.
+// Analogy: The underscores make the text look like a snake moving on the ground.
 
-// $ is often used in code related to jQuery or DOM elements.
+// 4. Dollar $
 
-// _ is commonly used for private or internal variables.
+// $ can be used in variable names (in languages like JavaScript).
+// Commonly used in jQuery or frameworks.
 
-// Use these only when it adds meaning, not everywhere.
+// Example:
 
-// 5.UPPERCASE (for constants or important fixed values)
+let $price = 100;
+let $userCount = 50;
+
+// Analogy: Think of $ as money-related → used when naming variables for price, amount, cost.
+
+// 5. Underscore _
+
+// _ is allowed in variable names.
+// Sometimes used at the start to show private/temporary variables.
+
+// Example:
+
+let _tempValue = 10;
+let user_id = 123;
+
+// Analogy: Like writing a secret note with _ at the beginning to mark it private.
+
+// 6. UPPERCASE
+
+// All letters are capital.
+// Often used for constants (values that don’t change).
 
 // Example:
 
 const PI = 3.14159;
 const MAX_USERS = 100;
 
-// Explanation:
+// Analogy: Writing rules on a notice board in ALL CAPS so they stand out.
 
-// All capital letters with underscores between words. This signals that the variable is a constant and should never change.
+// 7. Name + Number
 
-// Use for numbers/values that must remain fixed.
+// Variable names can include numbers, but:
+// They cannot start with a number.
+// They can end or be in the middle.
 
-// 6.Name + Number
 
 // Example:
 
-let option1 = "Red";
-let option2 = "Blue";
+let user1 = "Ram";
+let level2Score = 80;
 
-// Explanation:
-
-// Works, but not descriptive. Generally considered a bad practice, because variables should describe their purpose.
-
-// Avoid if possible, and use arrays instead:
-
-let options = ["Red", "Blue"];
+// Wrong : 1user (because it starts with a number).
+// Right : user1.
