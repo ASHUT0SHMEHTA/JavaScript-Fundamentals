@@ -1,144 +1,94 @@
-// Bahut sahi bhai 👌 ab main tumhe ek hi jagah pe sab kuch (Arithmetic + Assignment + Comparison + Operator Precedence) samjhata hoon, simple explanation + examples ke saath.
+// Operator Precedence
 
+// Operator precedence means the priority order in which JavaScript executes operators in an expression.
 
-// ---
+// When you have multiple operators in the same line, JavaScript doesn’t always go left to right — it follows precedence rules.
 
-// 🔥 JavaScript Operators Full Guide
+// Example:
 
+console.log(2 + 3 * 4);
 
-// ---
+// If JavaScript went left to right → (2 + 3) * 4 = 20
 
-// 1. Arithmetic Operators
+// But actually → 3 * 4 = 12, then 2 + 12 = 14
 
-// Numbers ke upar calculation karte hain.
+// Because * (multiplication) has higher precedence than + (addition).
 
-// Operator Meaning Example Result
+// 2. Why it’s important?
 
-// + Addition 10 + 5 15
-// - Subtraction 10 - 5 5
-// * Multiplication 10 * 5 50
-// / Division 10 / 2 5
-// % Modulus (Remainder) 10 % 3 1
-//  Exponentiation 2  3 8
-// ++ Increment x = 5; x++ → 6
-// -- Decrement y = 5; y-- → 4
+// To avoid confusion in complex calculations.
 
+// Helps us know which part of an expression runs first.
 
+// Useful in math operations, conditions, and real-life decision-making.
 
 // ---
 
-// 2. Assignment Operators
+// 3. Operator Precedence Table (Common Operators)
 
-// Variable mein value assign/update karte hain.
+// Operator Precedence (High → Low) Example
 
-// Operator Meaning Example Result
-
-// = Assign value x = 10 10
-// += Add & assign x = 5; x += 3 8
-// -= Subtract & assign x = 5; x -= 2 3
-// *= Multiply & assign x = 4; x *= 2 8
-// /= Divide & assign x = 20; x /= 5 4
-// %= Modulus & assign x = 10; x %= 3 1
-// = Power & assign x = 2; x = 3 8
-
-
+// () (Parentheses) Highest (2 + 3) * 4 = 20
+//  (Exponent) Next 2  3 = 8
+// * / % (Multiply, Divide, Modulus) After exponent 10 / 2 * 3 = 15
+// + - (Addition, Subtraction) After multiply/divide 10 - 3 + 2 = 9
+// < > <= >= (Comparison) After arithmetic 5 > 3 = true
+// == != === !== (Equality) After comparison 5 == "5" = true
+// && (Logical AND) Lower true && false = false
+//    (Logical OR)
+// = (Assignment) Very Low x = 10
 
 // ---
 
-// 3. Comparison Operators
+// 4. How to Control Precedence?
 
-// Values compare karte hain → result true/false.
+// Use parentheses () to force the order you want.
+// 👉 JavaScript always executes parentheses first, no matter the rule.
 
-// Operator Meaning Example Result
+// Example:
 
-// == Equal (type convert) 5 == "5" true
-// === Strict Equal 5 === "5" false
-// != Not Equal (type convert) 10 != "10" false
-// !== Strict Not Equal 10 !== "10" true
-// > Greater Than 15 > 10 true
-// < Less Than 5 < 10 true
-// >= Greater or Equal 10 >= 10 true
-// <= Less or Equal 5 <= 3 false
-
-
+// console.log((2 + 3) * 4); // 20
+// console.log(2 + 3 * 4);   // 14
 
 // ---
 
-// 4. Operator Precedence (Priority Order)
+// 5. Real-life Analogy
 
-// JavaScript mein expression evaluate karte waqt priority is order mein hoti hai:
+// Think of operator precedence like exam rules:
 
-// 1. () → Parentheses
+// In exams, final-year students get correction priority first, then third-year, then second-year, and lastly first-year.
 
+// Similarly, in JavaScript, some operators (like * or /) get higher priority, while others (like + or ||) wait until their turn.
 
-// 2. ** → Exponentiation
-
-
-// 3. * / % → Multiply / Divide / Modulus
-
-
-// 4. + - → Add / Subtract
-
-
-// 5. < <= > >= → Relational (comparison)
-
-
-// 6. == != === !== → Equality
-
-
-// 7. = += -= *= … → Assignment
-
-
-
+// If you want to change the priority, you can raise your hand (use parentheses) and get checked first.
 
 // ---
 
-// ✅ Examples (Mix of All)
+// 6. Code Example
 
-// Example 1 (Arithmetic + Comparison)
-
-// let result = 10 + 5 * 2 > 20;
+// let result = 10 + 2 * 3 ** 2;
 // console.log(result);
 
-// 👉 5 * 2 = 10 → 10 + 10 = 20 → 20 > 20 → false
+// Step by step:
 
+// 1. 3 ** 2 = 9 (exponent first)
 
-// ---
+// 2. 2 * 9 = 18 (multiply next)
 
-// Example 2 (Parentheses change result)
+// 3. 10 + 18 = 28 (addition last)
 
-// let result = (10 + 5) * 2 > 20;
-// console.log(result);
-
-// 👉 (10 + 5) = 15 → 15 * 2 = 30 → 30 > 20 → true
-
+// ➡️ Output: 28 ✅
 
 // ---
 
-// Example 3 (Assignment with Arithmetic)
+// ✅ In short:
 
-// let x = 10;
-// x += 5 * 2;   // x = 10 + (5*2)
-// console.log(x);
+// Operator precedence decides which operator runs first.
 
-// 👉 5 * 2 = 10 → x = 10 + 10 = 20
-// Output: 20
+// Higher precedence = executes earlier.
 
+// Use parentheses () to control the order and make expressions clearer.
 
 // ---
 
-// Example 4 (Strict Comparison)
-
-// console.log(5 == "5");   // true
-// console.log(5 === "5");  // false
-
-
-// ---
-
-// ⚡ Shortcut yaad rakho:
-// 👉 Bracket → Power → Multiply/Divide → Add/Subtract → Comparison → Equality → Assignment
-
-
-// ---
-
-// Bhai, chaho toh main tumhe ek diagram / pyramid chart bana ke de du jisme ye sab operators ke level ek hi nazar mein samajh aa jaye. Bana du?
+// Do you want me to also make a *simple chart with only the most commonly used operators (like +, -, , /, %, &&, ||, ==, ===, etc.) for quick revision?

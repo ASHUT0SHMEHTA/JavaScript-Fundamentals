@@ -1,34 +1,38 @@
 // Alright 👍 let’s go one by one with Equality Operator and prompt in JavaScript.
 
+// 1. == (Equal to)
 
-// ---
+// Checks if values are equal (ignores type).
 
-// 🔹 1. Equality Operators
+let x = 5;
+console.log(x == "5"); // true → values are same (5), type ignore
 
-// JavaScript has two main equality operators:
+// 2. === (Strict Equal to)
 
-// (a) == → Loose Equality
+// Checks if values and types are both equal.
 
-// Compares values only.
+let y = 5;
+console.log(y === "5"); // false → value same but type different (number vs string)
 
-// If types are different, it does type coercion before comparing.
+// 3. != (Not Equal to)
 
+// Checks if values are not equal (ignores type).
 
-// Example:
+let marks = 80;
+console.log(marks != "80"); // false → values are same, type ignored
 
-// console.log(5 == "5");     // true  (string "5" → number 5)
-// console.log(0 == false);   // true  (false → 0)
-// console.log(null == undefined); // true (special case)
+// 4. !== (Strict Not Equal to)
 
+// Checks if value or type is not equal.
 
-// ---
+let age = 18;
+console.log(age !== "18"); // true → value same but type different
 
 // (b) === → Strict Equality
 
 // Compares values + data types.
 
 // No type coercion.
-
 
 // Example:
 
@@ -41,9 +45,6 @@
 
 // > Use === (strict equality) to avoid unexpected results caused by coercion.
 
-
-
-
 // ---
 
 // 🔹 2. prompt() in JavaScript
@@ -51,7 +52,6 @@
 // 👉 prompt() is a browser method used to take user input.
 
 // It always returns string input (or null if canceled).
-
 
 // Example:
 
@@ -77,7 +77,6 @@
 //   console.log("Now works correctly with strict equality");
 // }
 
-
 // ---
 
 // ✅ Key Difference Recap:
@@ -87,8 +86,6 @@
 // === → compares values + type (no coercion).
 
 // prompt() → takes string input from the user (convert to number if needed).
-
-
 
 // ---
 

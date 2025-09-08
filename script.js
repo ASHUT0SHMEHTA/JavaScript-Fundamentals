@@ -109,7 +109,15 @@
 // const l = ++k;
 
 // console.log(`k:${k}, l:${l}`);
-let count1 = 3;
-const count2 = count1--;
+// let count1 = 3;
+// const count2 = count1--;
 
-console.log(`count1:${count1}, count2:${count2}`);
+// console.log(`count1:${count1}, count2:${count2}`);
+let price = 15;
+console.log((price *= 3));
+console.log((price *= "hello"));
+
+let newText = `Line X
+Line Y
+Line Z`;
+console.log(newText);

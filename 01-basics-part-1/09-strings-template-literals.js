@@ -1,45 +1,57 @@
-// Here is a comparison of the old way of handling strings in JavaScript using concatenation (+ operator or concat method) versus the new way using template literals:
+// String Template Literals (with Old vs New)
 
-// Aspect Old Way (Concatenation) New Way (Template Literals)
-// Syntax Uses + operator or concat() method Uses backticks  and ${} for embedded expressions
-// Readability Concatenation can get verbose and harder to read Cleaner and more readable with embedded variables and expressions
-// Multi-line Strings Needs explicit \n or multiple concatenations Supports multi-line strings natively
-// Variable Interpolation Requires breaking string and using + to add variables Variables and expressions embedded directly with ${expression}
-// Compatibility Works in all JavaScript versions Introduced in ES6, requires modern environments or transpiling
-// Performance Slightly faster in some cases since no parsing overhead Slightly parsing overhead, but negligible in most cases
-// Advanced Features No advanced processing support Supports tagged templates for custom string processing
-// Examples
-// Old way using concatenation:
+// 1. Old Way (before ES6)
 
-// js
-// let name = "John";
-// let greeting = "Hello, " + name + "! Welcome.";
-// console.log(greeting); // Hello, John! Welcome.
-// New way using template literals:
+// Example:
 
-// js
-// let name = "John";
-// let greeting = Hello, ${name}! Welcome.;
-// console.log(greeting); // Hello, John! Welcome.
-// Old way for multi-line string:
+let personName = "Mehta";
+let personAge = 22;
 
-// js
-// let message = "Line 1\n" +
-//               "Line 2\n" +
-//               "Line 3";
-// console.log(message);
-// New way for multi-line string:
+let oldMessage =
+  "My name is " + personName + " and I am " + personAge + " years old.";
+console.log(oldMessage);
 
-// js
-// let message = Line 1
-// Line 2
-// Line 3`;
-// console.log(message);
-// Summary
-// Template literals provide cleaner, more readable, and feature-rich string handling, especially useful for interpolation and multi-line text.
+// Multi-line old way
+let oldText = "Line A\n" + "Line B\n" + "Line C";
+console.log(oldText);
 
-// String concatenation remains useful for backward compatibility and in environments without ES6 support.
+// 2. New Way (Template Literals in ES6)
 
-// Template literals add slight overhead but usually negligible in modern JavaScript environments.
+// Example:
 
-// This comparison highlights why template literals are preferred in modern JavaScript development for most use cases .
+let userName = "Rohit";
+let userAge = 25;
+
+let newMessage = `My name is ${userName} and I am ${userAge} years old.`;
+console.log(newMessage);
+
+// Multi-line new way
+let newText = `Line X
+Line Y
+Line Z`;
+console.log(newText);
+
+// 3. Expression Support (Only in Template Literals)
+
+// Example:
+
+let num1 = 15;
+let num2 = 7;
+
+console.log("The sum of " + num1 + " and " + num2 + " is " + (num1 + num2)); // Old way
+console.log(`The sum of ${num1} and ${num2} is ${num1 + num2}`); // New way
+// 4. Comparison Table
+
+// Feature Old Way (Quotes + +) Template Literals (Backticks)
+
+// Syntax ' ' or " "   (backticks)
+// Insert variables "Hello " + personName Hello ${userName}
+// Multi-line strings Use \n or + Directly press Enter
+// Expression evaluation Concatenate manually ${num1 + num2} inside string
+// Readability Messy  Clean and simple
+
+// Real-life Analogy
+
+// Old way = puzzle with many small pieces (you keep joining strings with +).
+
+// Template literal = ready-made sentence with blanks you just fill in.
