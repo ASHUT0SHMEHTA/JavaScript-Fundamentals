@@ -1,82 +1,66 @@
-// Great question 👍 — this is one of the most asked JavaScript interview topics.
+// Statements and Expressions – Definition
 
+// In programming, statements and expressions are the building blocks of code. They look similar but have different purposes.
 
-// ---
+// Expression: A piece of code that produces a value.
 
-// 🔹 1. Expression
+// Statement: A piece of code that performs an action.
 
-// 👉 An expression is something that produces a value.
-// It can be a single value, variable, or a combination of values and operators.
+// Think of it like ingredients and cooking instructions:
 
-// ✅ Examples:
+// Expression = ingredient (gives a result/value)
 
-// 5 + 10           // produces 15
-// "Hello " + "JS"  // produces "Hello JS"
-// true && false    // produces false
+// Statement = instruction (does something with the ingredients)
 
-// ⚡ Even x = 5 is an expression, because it produces a value (5) after assignment.
+// 1. Expression
 
+// Key Points
 
-// ---
+// 1. Produces a Value
 
-// 🔹 2. Statement
+// Every expression returns a result.
 
-// 👉 A statement is an instruction that tells JavaScript to do something.
-// Think of it like a complete sentence in code.
-// It usually ends with ; and may contain expressions inside it.
+// Example: 5 + 3 → returns 8
 
-// ✅ Examples:
+// 2. Can be Part of a Statement
 
-// let num = 10;              // declaration statement
-// if (num > 5) {             // if-statement
-//   console.log("Greater");
-// }
-// for (let i = 0; i < 3; i++) {   // loop statement
-//   console.log(i);
-// }
+// Expressions are often used inside statements.
 
+// 3. Examples in JavaScript
 
-// ---
+10 + 5; // returns 15
+"Hello" + " World"; // returns "Hello World"
+7 > 3; // returns true
+let y = 5; // assignment expression, returns 5
 
-// 🔹 Easy Difference
+// 4. Real-life analogy:
 
-// Expression → Produces a value
+// Expression is like mixing ingredients: 2 eggs + 1 cup flour = dough (a value).
 
-// Statement → Performs an action
+// 2. Statement
 
+// Key Points
 
+// 1. Performs an Action
 
-// ---
+// Statements tell the computer what to do, like assigning values, looping, or making decisions.
 
-// 🔹 Example Together
+// 2. Does Not Always Return a Value
 
-// let a = 5;        // statement
-// let b = 10;       // statement
+// The focus is on the action, not the value.
 
-// let sum = a + b;  // here "a + b" is an expression
-//                   // the whole line is a statement
+// 3. Examples in JavaScript
 
-// if (sum > 10) {   // "sum > 10" is an expression (true/false)
-//   console.log("Sum is big");   // statement
-// }
+let x = 10; // variable declaration statement
+if (x > 5) {
+  // if statement
+  console.log("Big"); // action inside statement
+}
+for (let i = 0; i < 3; i++) {
+  // loop statement
+  console.log(i);
+}
 
-// 👉 So:
+// 4. Real-life analogy:
 
-// "a + b" = expression
-
-// "sum > 10" = expression
-
-// if (sum > 10) { ... } = statement
-
-
-
-// ---
-
-// ⚡ Shortcut to remember:
-// 📌 Expression = value
-// 📌 Statement = action
-
-
-// ---
-
-// Do you want me to also make a small comparison table (Expression vs Statement) so it’s super easy to revise before interviews?
+// Statement is like following a recipe instruction: “Bake the cake for 30 minutes” → it performs an action.
