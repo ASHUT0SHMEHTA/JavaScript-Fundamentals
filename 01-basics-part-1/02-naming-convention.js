@@ -1,90 +1,120 @@
-// Naming convention
+// Naming Conventions in Programming
 
-// 1. Lowercase
+// Naming conventions are rules or styles we follow when writing names (identifiers) in code. They make code easy to read, understand, and maintain.
 
-// All letters are small (a–z).
-// Usually used for simple variable names.
+// Think of it like different handwriting styles – everyone writes differently, but if you follow a neat, common style, everyone can read it easily.
 
-// Example:
+// 1. camelCase
 
-let age = 25;
-let city = "Delhi";
+// In this style:
 
-// Think of it like writing your name in all small letters on a notebook.
+// The first word starts with a small letter.
 
-// 2. CamelCase
+// Every new word after that starts with a capital letter (no spaces, no underscores).
 
-// First word starts with lowercase, every next word starts with a capital letter.
-// No spaces or underscores are used.
-// Common in JavaScript variable/function names.
-
-// Example:
+// Example in JavaScript:
 
 let firstName = "Ashutosh";
-let totalMarks = 480;
+let totalAmount = 2500;
 
-// Analogy: Like writing “firstName” as a camel’s hump – the capital letters look like humps in the middle.
+function isUserLoggedIn(userName) {
+  return userName === "Ashutosh";
+}
 
-// 3. Snake_Case
+// 2. PascalCase (like camelCase but starts with a capital letter)
 
-// Words are written in lowercase and separated by an underscore _.
-// Used in Python variables/functions.
+// Each word starts with a capital letter.
 
-// Example:
+// Example in JavaScript:
 
-user_name = "Ashu"
-total_marks = 480
+class BankAccount {
+  constructor(owner, balance) {
+    this.owner = owner;
+    this.balance = balance;
+  }
+}
 
+const myAccount = new BankAccount("Ashutosh", 5000);
 
-// Analogy: The underscores make the text look like a snake moving on the ground.
+// 3. snake_case
 
-// 4. Dollar $
+// Words are written in lowercase.
+// Words are separated by underscores (_).
 
-// $ can be used in variable names (in languages like JavaScript).
-// Commonly used in jQuery or frameworks.
+// Example in JavaScript:
 
-// Example:
+let user_name = "ashutosh";
+let total_amount = 2500;
 
-let $price = 100;
-let $userCount = 50;
+function calculate_tax(amount) {
+  return amount * 0.18;
+}
 
-// Analogy: Think of $ as money-related → used when naming variables for price, amount, cost.
+console.log(calculate_tax(total_amount)); // 450
 
-// 5. Underscore _
+// 4. UPPERCASE (ALL CAPS)
 
-// _ is allowed in variable names.
-// Sometimes used at the start to show private/temporary variables.
+// Every letter is in capital letters.
+// Often combined with underscores for multi-word names.
 
-// Example:
-
-let _tempValue = 10;
-let user_id = 123;
-
-// Analogy: Like writing a secret note with _ at the beginning to mark it private.
-
-// 6. UPPERCASE
-
-// All letters are capital.
-// Often used for constants (values that don’t change).
-
-// Example:
+// Example in JavaScript:
 
 const PI = 3.14159;
-const MAX_USERS = 100;
+const MAX_VALUE = 100;
+const API_KEY = "XYZ123SECRET";
 
-// Analogy: Writing rules on a notice board in ALL CAPS so they stand out.
+// 5. Using Dollar Sign $
+
+// $ can be used in variable names in JavaScript.
+// Often used in jQuery variables or special cases.
+
+// Example in JavaScript:
+
+let $price = 99;
+let $user = { name: "Ashutosh", age: 23 };
+
+// Example with jQuery (if available)
+
+let $button = $("#submitBtn");
+
+// 6. Using Underscores _ at Start or End
+
+// Single underscore _var: often means “private” variable (not for direct use).
+
+// Double underscore init: not in JS, but concept similar for special names.
+
+// Trailing underscore class_: used when keyword already taken.
+
+// Example in JavaScript:
+
+let _hiddenValue = 42; // private-like variable
+
+let class_ = "Science"; // because 'class' is a reserved keyword
 
 // 7. Name + Number
 
-// Variable names can include numbers, but:
-// They cannot start with a number.
-// They can end or be in the middle.
+// Variables/functions can include numbers (but not start with them).
 
+// Example in JavaScript:
 
-// Example:
+let version1 = "1.0.0";
+let player2 = "Virat";
+let itemCount3 = 15;
 
-let user1 = "Ram";
-let level2Score = 80;
+// Real-life analogy:
 
-// Wrong : 1user (because it starts with a number).
-// Right : user1.
+// Think of naming conventions like different ways of writing contact names in your phone:
+
+// camelCase → myBestFriend
+
+// PascalCase → MyBestFriend
+
+// snake_case → my_best_friend
+
+// UPPERCASE → MYBESTFRIEND
+
+// With $ → $bestFriend (special)
+
+// With underscore → _bestFriend (private note)
+
+// With number → bestFriend1, bestFriend2

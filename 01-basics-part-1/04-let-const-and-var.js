@@ -1,53 +1,69 @@
-// 1.var
+// JavaScript Variables: var, let, const
 
-//Old way of declaring variables (before ES6).
+// 1. Definition
 
-// Function-scoped (visible inside the whole function).
+// Variables = containers for storing data.
+
+// var, let, const → ways to declare variables in JS.
+
+// Difference = scope, re-declaration, update ability.
+
+// 2. var
+
+// Old way to declare variables.
 
 // Can be re-declared and updated.
 
-// Gets hoisted (moved to top of scope with undefined).
+// Scope = function/global.
+
+// Hoisting = yes (undefined until assigned).
 
 // Example:
 
-var name = "John";
-var name = "Alice";   // allowed (re-declare)
-name = "Bob";         // allowed (update)
+var name = "Ashutosh";
+name = "Rohit";
+var name = "Rahul";
+console.log(name); // Rahul
 
-console.log(name); // "Bob"
+// Analogy: Cardboard box in common area → anyone can change/replace.
 
-// 2.let
+// 3. let
 
-// Introduced in ES6.
+// Modern JS (ES6+)
 
-// Block-scoped (only available inside { }).
+// Can be updated, cannot re-declare in same scope.
 
-// Cannot be re-declared in the same scope, but can be updated.
+// Scope = block { }.
 
-// Hoisted but not initialized (Temporal Dead Zone).
+// Hoisting = yes, but Temporal Dead Zone (TDZ).
 
 // Example:
 
 let age = 25;
-// let age = 30; not allowed (re-declare in same scope)
-age = 30;          // allowed (update)
+age = 26; // Allowed
+// let age = 27;  ❌ Not allowed
 
-console.log(age); // 30
+// Analogy: Personal locker in your room → change content, cannot duplicate name.
 
-// 3. const
+// 4. const
 
-// Introduced in ES6.
+// Modern JS (ES6+)
 
-// Block-scoped.
+// Cannot be updated or re-declared.
 
-// Cannot be re-declared and cannot be updated.
+// Must initialize while declaring.
 
-// Must be initialized at the time of declaration.
+// Scope = block.
+
+// Hoisting = yes, TDZ.
 
 // Example:
 
-const PI = 3.14;
-// const PI = 3.1416;  not allowed (re-declare)
-// PI = 3.1416;        not allowed (update)
+const pi = 3.14;
+// pi = 3.14159  Not allowed
 
-console.log(PI); // 3.14
+const fruits = ["Apple", "Banana"];
+fruits.push("Mango"); // Allowed
+// fruits = ["Grapes"];  Not allowed
+
+// Analogy: Sealed jar → cannot replace jar, but can adjust contents if allowed.
