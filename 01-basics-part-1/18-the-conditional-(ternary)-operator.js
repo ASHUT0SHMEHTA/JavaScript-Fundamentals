@@ -1,4 +1,4 @@
-// Conditional (Ternary) Operator – Definition
+// Conditional (Ternary) Operator –
 
 // The conditional operator in programming is a short-hand way to write an if…else statement. It chooses one value or action based on a condition.
 
@@ -56,8 +56,6 @@ let isRaining = true;
 let outfit = isRaining ? "Raincoat" : "Sunglasses";
 
 console.log(outfit); // Raincoat
-
-// ---
 
 // Key Points to Remember
 

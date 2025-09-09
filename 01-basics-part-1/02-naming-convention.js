@@ -14,11 +14,11 @@
 
 // Example in JavaScript:
 
-let firstName = "Ashutosh";
+let firstName = 'Ashutosh';
 let totalAmount = 2500;
 
 function isUserLoggedIn(userName) {
-  return userName === "Ashutosh";
+  return userName === 'Ashutosh';
 }
 
 // 2. PascalCase (like camelCase but starts with a capital letter)
@@ -34,16 +34,17 @@ class BankAccount {
   }
 }
 
-const myAccount = new BankAccount("Ashutosh", 5000);
+const myAccount = new BankAccount('Ashutosh', 5000);
 
 // 3. snake_case
 
 // Words are written in lowercase.
+
 // Words are separated by underscores (_).
 
 // Example in JavaScript:
 
-let user_name = "ashutosh";
+let user_name = 'ashutosh';
 let total_amount = 2500;
 
 function calculate_tax(amount) {
@@ -61,7 +62,7 @@ console.log(calculate_tax(total_amount)); // 450
 
 const PI = 3.14159;
 const MAX_VALUE = 100;
-const API_KEY = "XYZ123SECRET";
+const API_KEY = 'XYZ123SECRET';
 
 // 5. Using Dollar Sign $
 
@@ -71,11 +72,11 @@ const API_KEY = "XYZ123SECRET";
 // Example in JavaScript:
 
 let $price = 99;
-let $user = { name: "Ashutosh", age: 23 };
+let $user = { name: 'Ashutosh', age: 23 };
 
 // Example with jQuery (if available)
 
-let $button = $("#submitBtn");
+let $button = $('#submitBtn');
 
 // 6. Using Underscores _ at Start or End
 
@@ -89,7 +90,7 @@ let $button = $("#submitBtn");
 
 let _hiddenValue = 42; // private-like variable
 
-let class_ = "Science"; // because 'class' is a reserved keyword
+let class_ = 'Science'; // because 'class' is a reserved keyword
 
 // 7. Name + Number
 
@@ -97,8 +98,8 @@ let class_ = "Science"; // because 'class' is a reserved keyword
 
 // Example in JavaScript:
 
-let version1 = "1.0.0";
-let player2 = "Virat";
+let version1 = '1.0.0';
+let player2 = 'Virat';
 let itemCount3 = 15;
 
 // Real-life analogy:

@@ -48,11 +48,11 @@
 // Q.2 What is JavaScript?
 // Ans. JavaScript (often called JS) is a programming language mainly used to make websites interactive, dynamic, and user-friendly.
 
-// HTML → gives structure (the skeleton of a webpage).
+// HTML - gives structure (the skeleton of a webpage).
 
-// CSS → gives style/design (colors, fonts, layout, beauty).
+// CSS - gives style/design (colors, fonts, layout, beauty).
 
-// JavaScript → gives life/behavior (actions, movement, interaction).
+// JavaScript - gives life/behavior (actions, movement, interaction).
 
 // Without JavaScript, websites would look nice but stay completely static (just like a photo). With JavaScript, they become alive (like a video game or app you can interact with).
 
@@ -84,11 +84,11 @@
 
 // Real-Life Analogy: A Human Body
 
-// HTML = Skeleton → gives the shape (bones).
+// HTML = Skeleton - gives the shape (bones).
 
-// CSS = Skin & Clothes → makes it look beautiful.
+// CSS = Skin & Clothes - makes it look beautiful.
 
-// JavaScript = Brain & Muscles → makes it move, react, and think.
+// JavaScript = Brain & Muscles - makes it move, react, and think.
 
 // Without JavaScript, a website is like a mannequin in a shop—well-dressed (HTML + CSS) but lifeless.
 

@@ -1,8 +1,4 @@
-// Absolutely! Let’s break down Boolean logic in a clear, simple, and detailed way with examples and analogies.
-
-// ---
-
-// 🔹 Boolean Logic – Definition
+// Boolean Logic – Definition
 
 // Boolean logic is a branch of mathematics and computer science that deals with true and false values only. It helps us make decisions based on conditions, using logical reasoning.
 
@@ -10,9 +6,7 @@
 
 // Think of it like a light switch: it’s either ON (true) or OFF (false) — no in-between.
 
-// ---
-
-// 🔹 Key Concepts
+// Key Concepts
 
 // 1. Boolean Values
 
@@ -24,8 +18,8 @@
 
 // Example:
 
-// let isRaining = true;
-// let haveUmbrella = false;
+let isRaining = true;
+let haveUmbrella = false;
 
 // 2. Boolean Expressions
 
@@ -33,8 +27,8 @@
 
 // Example:
 
-// let age = 18;
-// let canVote = age >= 18;  // true
+let age = 18;
+let canVote = age >= 18; // true
 
 // 3. Boolean Operators
 // Boolean logic uses operators to combine or modify conditions:
@@ -55,9 +49,9 @@
 
 // Analogy: You can watch a movie only if you finish homework AND clean your room.
 
-// let homeworkDone = true;
-// let roomClean = false;
-// let canWatchMovie = homeworkDone && roomClean; // false
+let homeworkDone = true;
+let roomClean = false;
+let canWatchMovie = homeworkDone && roomClean; // false
 
 // 2. OR (||)
 
@@ -65,9 +59,9 @@
 
 // Analogy: You can go outside if it’s Saturday OR it’s a holiday.
 
-// let isSaturday = false;
-// let isHoliday = true;
-// let canGoOutside = isSaturday || isHoliday; // true
+let isSaturday = false;
+let isHoliday = true;
+let canGoOutside = isSaturday || isHoliday; // true
 
 // 3. NOT (!)
 
@@ -75,12 +69,10 @@
 
 // Analogy: If the light is OFF, then NOT OFF means it’s ON.
 
-// let lightOn = false;
-// let lightOff = !lightOn; // true
+let lightOn = false;
+let lightOff = !lightOn; // true
 
-// ---
-
-// 🔹 Real-life Analogy
+// Real-life Analogy
 
 // Imagine Boolean logic like a traffic system:
 

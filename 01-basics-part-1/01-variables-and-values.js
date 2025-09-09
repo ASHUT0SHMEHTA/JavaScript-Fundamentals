@@ -14,9 +14,9 @@ let age = 25;
 
 // Here:
 
-// age → is the variable (the name of the box).
+// age - is the variable (the name of the box).
 
-// 25 → is the value stored inside the box.
+// 25 - is the value stored inside the box.
 
 // 2. Value (the actual data inside the container)
 
@@ -26,13 +26,13 @@ let age = 25;
 
 // Example:
 
-let name = "Ashutosh";
+let name = 'Ashutosh';
 
 // Here:
 
-// name → variable
+// name - variable
 
-// "Ashutosh" → value stored in it
+// "Ashutosh" - value stored in it
 
 // Key Points (Simple Words)
 
