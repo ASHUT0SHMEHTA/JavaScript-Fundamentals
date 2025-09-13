@@ -46,4 +46,4 @@
 // Powers server-side logic, APIs, database handling, and authentication.
 
 // 6. Cross-Platform Applications
-// Used for developing mobile apps (React Native, Ionic), desktop apps (Electron), and even IoT devices.;
+// Used for developing mobile apps (React Native, Ionic), desktop apps (Electron), and even IoT devices.
